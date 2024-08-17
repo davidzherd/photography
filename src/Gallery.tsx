@@ -167,7 +167,7 @@ function Gallery() {
         textAlign: "center",
       }}
     >
-      {!validGallery ? <Navigate to="*" /> : null}
+      {!validGallery ? <Navigate to="/photography/*" /> : null}
       <Flex
         direction="row"
         style={{ marginTop: "6rem", justifyContent: "center" }}
