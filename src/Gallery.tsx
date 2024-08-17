@@ -19,11 +19,9 @@ function Gallery() {
 
   const getData = async (id: string, page?: number) => {
     const imageData = await getImages(id, page ?? 1);
-    if (typeof imageData === "object") {
-      setImages(imageData.media);
-      setNextPage(imageData.currentPage + 1);
-      setTotal(imageData.total);
-    }
+    setImages(imageData.media);
+    setNextPage(imageData.currentPage + 1);
+    setTotal(imageData.total);
   };
   const checkGalleryValidity = () => {
     const urlId = window.location.pathname.slice(21);
