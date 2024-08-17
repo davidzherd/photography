@@ -17,20 +17,20 @@ const MyImage = styled.img`
   max-height: 85%;
   box-shadow: hsla(0, 0%, 0%, 0.5) 5px 5px 20px;
 `;
-interface srcData {
-  original: string;
-  landscape: string;
-  large2x: string;
-  large: string;
-  portrait: string;
-}
-interface imageData {
-  src: srcData;
-  width: number;
-  height: number;
-}
+// interface srcData {
+//   original: string;
+//   landscape: string;
+//   large2x: string;
+//   large: string;
+//   portrait: string;
+// }
+// interface imageData {
+//   src: srcData;
+//   width: number;
+//   height: number;
+// }
 interface Props {
-  imagesArray: Array<imageData>;
+  imagesArray: any;
   darkTheme: boolean;
   handleNextPage: Function;
   handlePrevPage: Function;
