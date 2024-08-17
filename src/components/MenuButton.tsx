@@ -4,7 +4,7 @@ interface Props {
   onClick: Function;
 }
 function MenuButton({ color, size, onClick }: Props) {
-  const handleAction = (event) => {
+  const handleAction = (event: any) => {
     event.stopPropagation();
     onClick();
   };
