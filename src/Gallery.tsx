@@ -7,7 +7,12 @@ import { GalleryContext } from "./Context";
 import { places } from "./assets/placesConfig";
 import { Navigate } from "react-router-dom";
 import { Photo, Video } from "pexels";
-
+declare global {
+  interface Window {
+    require: any;
+  }
+}
+window.require = (name: string) => new URL(name, import.meta.url).href;
 // Define types for media items
 type MediaItem = Photo | Video; // Assuming Photo and Video are already defined elsewhere
 
